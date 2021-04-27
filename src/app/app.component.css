@@ -1,0 +1,40 @@
+main {
+  margin: 30px;
+}
+
+.user-avatar {
+  max-height: 35px;
+  border-radius: 4px;
+}
+
+.toolbar-tools {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.filler {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-item.menu-item-active {
+  text-decoration: underline;
+}
+
+.profile-picture {
+  max-height: 40px;
+}
+
+mat-toolbar {
+  justify-content: flex-end;
+}
+
+.flexExpand {
+  flex: 1 1 auto;
+}
