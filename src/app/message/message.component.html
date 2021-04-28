@@ -1,12 +1,15 @@
-<div class="chat-container mat-elevation-z7">
+<mat-card color="primary" class="message-container mat-elevation-z7">
 
   <h2>How can we help you?</h2>
 
-  <textarea matInput placeholder="Type Your Message Here"></textarea>
+  <mat-form-field>
+    <mat-label>Leave a comment</mat-label>
+    <textarea color="accent" matInput placeholder="Ex. It nurtures my professional growth..."></textarea>
+  </mat-form-field>
 
   <div class="buttons-container">
-    <button mat-raised-button color="primary">Send Message</button>
-    <button mat-raised-button>Close Chat</button>
+    <button mat-raised-button color="accent">Send Message</button>
+    <button mat-raised-button>Cancel</button>
   </div>
 
-</div>
+</mat-card>
