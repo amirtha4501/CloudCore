@@ -31,6 +31,11 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
     ScrollTopComponent,
   ],
   imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
     MatProgressSpinnerModule,
     MatMenuModule,
     MatButtonModule,
@@ -39,11 +44,6 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
     MatToolbarModule,
     MatInputModule,
     MatCardModule,
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

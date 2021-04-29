@@ -1,0 +1,87 @@
+<!-- <h1>Courses card list</h1> -->
+<!-- <mat-card *ngFor="let course of courses" class="course-card mat-elevation-z10">
+
+  <mat-card-header>
+
+    <mat-card-title>{{course.description}}</mat-card-title>
+
+  </mat-card-header>
+
+  <img mat-card-image [src]="course.iconUrl">
+
+  <mat-card-content>
+    <p>{{course.longDescription}}</p>
+  </mat-card-content>
+
+  <mat-card-actions class="course-actions">
+
+    <button mat-button class="mat-raised-button mat-primary" [routerLink]="[course.url]"
+      [queryParams]="{couponCode: 'NEW_YEAR'}">
+      VIEW COURSE
+    </button>
+
+    <button mat-button class="mat-raised-button mat-accent" (click)="editCourse(course)">
+      EDIT
+    </button>
+
+  </mat-card-actions>
+
+</mat-card> -->
+
+<!-- <mat-card *ngFor="let course of courses" class="course-card mat-elevation-z10">
+  <mat-card-header>
+    <mat-card-title>{{course.description}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="course.iconUrl">
+
+  <mat-card-content>
+    <p>{{course.longDescription}}</p>
+  </mat-card-content>
+
+  <mat-card-actions class="course-actions">
+    <button mat-button class="mat-raised-button mat-primary" [routerLink]="[course.url]" [queryParams]="{couponCode: 'NEW_YEAR'}">VIEW COURSE</button>
+    <button mat-button class="mat-raised-button mat-accent" (click)="editCourse(course)">EDIT</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<!-- <div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let course of courses">
+      <mat-card class="course-card mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title>{{course.description}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="course.iconUrl">
+
+        <mat-card-content>
+          <p>{{course.longDescription}}</p>
+        </mat-card-content>
+
+        <mat-card-actions class="course-actions">
+          <button mat-button class="mat-raised-button mat-primary" [routerLink]="[course.url]"
+            [queryParams]="{couponCode: 'NEW_YEAR'}">VIEW COURSE</button>
+          <button mat-button class="mat-raised-button mat-accent" (click)="editCourse(course)">EDIT</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div> -->
+
+<div class="course-container" fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+  <mat-card *ngFor="let course of courses" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)" class="course-card mat-elevation-z3">  
+    <img mat-card-image [src]="course.iconUrl">
+    <mat-card-header>
+      <mat-card-title>{{course.description}}</mat-card-title>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p>{{course.longDescription}}</p>
+    </mat-card-content>
+    <br>
+
+    <mat-card-actions class="course-actions">
+      <button mat-button class="mat-raised-button mat-primary" [routerLink]="[course.url]" [queryParams]="{couponCode: 'NEW_YEAR'}">VIEW COURSE</button>
+      <button mat-button class="mat-raised-button mat-accent" (click)="editCourse(course)">EDIT</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

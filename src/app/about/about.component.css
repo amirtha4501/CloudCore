@@ -20,6 +20,7 @@
   width: 70%;
   margin: auto;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .about-content h1 {
@@ -28,4 +29,13 @@
   text-decoration: #1976D2 solid underline;
   -webkit-text-underline-position: under;
   text-underline-position: under;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 70%;
+  background-color: #8080807a;
+  height: 2px;
 }
