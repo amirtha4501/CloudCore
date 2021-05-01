@@ -21,6 +21,9 @@ import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CourseComponent } from './course/course.component';
+import { LessonsListComponent } from './lessons-list/lessons-list.component';
+import { LessonDetailComponent } from './lesson-detail/lesson-detail.component';
 // import {MatMomentDateModule} from "@angular/material-moment-adapter";
 
 
@@ -28,7 +31,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   declarations: [
     CourseDialogComponent,
     CoursesCardListComponent,
-    HomeComponent
+    HomeComponent,
+    CourseComponent,
+    LessonsListComponent,
+    LessonDetailComponent
   ],
   imports: [
     CommonModule,
