@@ -24,6 +24,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CourseComponent } from './course/course.component';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { LessonDetailComponent } from './lesson-detail/lesson-detail.component';
+import { SafeUrlPipe } from '../pipes/safe-url.pipe';
 // import {MatMomentDateModule} from "@angular/material-moment-adapter";
 
 
@@ -34,7 +35,8 @@ import { LessonDetailComponent } from './lesson-detail/lesson-detail.component';
     HomeComponent,
     CourseComponent,
     LessonsListComponent,
-    LessonDetailComponent
+    LessonDetailComponent,
+    SafeUrlPipe
   ],
   imports: [
     CommonModule,
