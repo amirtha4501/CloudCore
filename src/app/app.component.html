@@ -12,8 +12,8 @@
       <mat-icon>library_books</mat-icon>
       <span> Courses</span>
     </a>
-    
-    <a mat-button class="menu-item" [routerLink]="[{outlets: {chat: ['helpdesk-chat']}}]">
+    <!-- [routerLink]="[{outlets: {chat: ['helpdesk-chat']}}]" -->
+    <a mat-button class="menu-item">
       <mat-icon>help</mat-icon>
       <span> Help</span>
     </a>
@@ -23,7 +23,7 @@
       <span> Login</span>
     </a>
     
-    <a *ngIf="this.authService.isLoggedIn" mat-button class="menu-item">
+    <a *ngIf="this.authService.isLoggedIn" mat-button class="menu-item" (click)="logout()">
       <mat-icon>exit_to_app</mat-icon>
       <span> Logout</span>
     </a>
@@ -31,3 +31,4 @@
 </mat-toolbar>
 <router-outlet></router-outlet>
 <app-scroll-top></app-scroll-top>
+<router-outlet name="chat"></router-outlet>

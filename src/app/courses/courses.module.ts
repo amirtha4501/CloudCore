@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CoursesRoutingModule } from './courses-routing.module';
-import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import { CoursesCardListComponent } from './courses-card-list/courses-card-list.component';
 
 import { MatListModule } from "@angular/material/list";
@@ -25,12 +24,10 @@ import { CourseComponent } from './course/course.component';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { LessonDetailComponent } from './lesson-detail/lesson-detail.component';
 import { SafeUrlPipe } from '../pipes/safe-url.pipe';
-// import {MatMomentDateModule} from "@angular/material-moment-adapter";
 
 
 @NgModule({
   declarations: [
-    CourseDialogComponent,
     CoursesCardListComponent,
     HomeComponent,
     CourseComponent,
@@ -55,7 +52,6 @@ import { SafeUrlPipe } from '../pipes/safe-url.pipe';
     MatSelectModule,
     MatDatepickerModule,
     FlexLayoutModule
-    // MatMomentDateModule,
   ],
   providers: [
     CoursesService

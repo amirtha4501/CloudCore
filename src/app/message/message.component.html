@@ -9,7 +9,7 @@
 
   <div class="buttons-container">
     <button mat-raised-button color="accent">Send Message</button>
-    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button [routerLink]="[ '../', {outlets: {chat: null}}]">Cancel</button>
   </div>
 
 </mat-card>
